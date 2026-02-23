@@ -19,3 +19,8 @@ outputs/
 
 
 .DS_Store
+
+# large data/results
+/data/*.csv
+/data/*.pkl
+/outputs/
