@@ -41,14 +41,17 @@ Open `Variance_Replicating_Portfolio.ipynb` in Jupyter Notebook or Google Colab 
 varrep/
 ├── src/
 │   └── varrep/
-│       ├── config.py          # Central configuration
-│       ├── loader.py          # Data ingestion + cleaning
-│       ├── replicator.py      # Variance replication logic
-│       ├── backtest.py        # Entry/exit + portfolio evolution
-│       └── metrics.py         # Performance & statistical metrics
+│       ├── __init__.py
+│       ├── backtest.py              # Portfolio simulation and PnL computation engine
+│       ├── config.py                # Central configuration and parameter management
+│       ├── loader.py                # Data loading and preprocessing
+│       ├── metrics.py               # Performance and risk metrics
+│       ├── signals.py               # Trading signal construction logic
+│       └── variance_replication.py  # Static option replication model
 ├── scripts/
-│   └── run_backtest.py        # CLI entry point
-├── data/                      # Input CSV files
+│   └── run_backtest.py              # CLI entry point for running full backtest
+├── data/
+├── pyproject.toml
 └── README.md
 ```
 
